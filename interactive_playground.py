@@ -1,3 +1,5 @@
+import os
+os.environ['PYOPENGL_PLATFORM'] = 'egl'
 from qqtt import InvPhyTrainerWarp
 from qqtt.utils import logger, cfg
 from datetime import datetime
@@ -6,7 +8,6 @@ import numpy as np
 import torch
 from argparse import ArgumentParser
 import glob
-import os
 import pickle
 import json
 
